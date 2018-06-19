@@ -1,0 +1,29 @@
+,Text:,Audio:,Image:,No of tries: (1-4),Points awarded: (0-infinity),Display question number: (Y/N),Timer: (0s-infinity),,,,,,,,,,,,,,
+Section Name:,sectionName 1 Name,sectionName 1 Audio,title1.jpg,20000,0,TRUE,,,,,,,,,,,,,,,
+Instructions:,看汉语拼音，选出正确的答案！,instructions1.mp3,Instruction.jpg,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,
+,,Audio:,Image:,,,,,,,,,,,,,,,,,,
+Page Background:,,Page Background Audio,Page Background Image,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,
+,,,Image:,,,,,,,,,,,,,,,,,,
+Question Background:,,,QuestionBackground Image,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,
+,Text:,Audio:,Image:,,Text:,Audio:,Image:,,Text:,Audio:,Image:,,Text:,Audio:,Image:,,Text:,Audio:,Image:,,
+Question:,wénjùhé,QuestionAudio1,QuestionImage1,Answer 1:,Answer1Text,Answer2Text,pencilbox.gif,Answer 2:,Answer2Text,Answer2Audio,eraser.gif,Answer 3:,Answer3Text,Answer3Audio,crayon.gif,Answer 4:,Answer4Text,Answer4Audio,paper.gif,Correct:,1
+Question:,xìangpíchā,QuestionAudio2,QuestionImage2,Answer 1:,Answer1Text,Answer2Text,crayon.gif,Answer 2:,Answer2Text,Answer2Audio,pencilbox.gif,Answer 3:,Answer3Text,Answer3Audio,paper.gif,Answer 4:,Answer4Text,Answer4Audio,eraser.gif,,4
+,,,,,,,,,,,,,,,,,,,,,
+,Text:,Audio:,Image:,,,,,,,,,,,,,,,,,,
+Section Name:,sectionName 2 Name,sectionName 2 Audio,title2.jpg,,,,,,,,,,,,,,,,,,
+Instructions:,看图片，选出正确的汉语拼音！,instructions2.mp3,QuestionBackground Image 2,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,
+,,Audio:,Image:,,,,,,,,,,,,,,,,,,
+Page Background:,,Page Background Audio,Page Background Image,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,
+,,,Image:,,,,,,,,,,,,,,,,,,
+Question Background:,,,QuestionBackground Image,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,
+,Text:,Audio:,Image:,,Text:,Audio:,Image:,,Text:,Audio:,Image:,,Text:,Audio:,Image:,,Text:,Audio:,Image:,,
+Question:,elephant.jpg,QuestionAudio1,QuestionImage1,Answer 1:,大象,daxiang.wav,,Answer 2:,狮子,shizi.wav,,Answer 3:,猴子,houzi.wav,,Answer 4:,熊猫,xiongmao.wav,,Correct:,1
+Question:,rabbit.png,QuestionAudio2,QuestionImage2,Answer 1:,长颈鹿,changjinglu.wav,,Answer 2:,熊猫,xiongmao.wav,,Answer 3:,大象,daxiang.wav,,Answer 4:,兔子,tuzi.wav,,,4
+Question:,horse.png,QuestionAudio3,QuestionImage3,Answer 1:,狮子,shizi.wav,,Answer 2:,兔子,tuzi.wav,,Answer 3:,马,ma.wav,,Answer 4:,狗,gou.wav,,,3
+Question:,cow.jpg,QuestionAudio4,QuestionImage4,Answer 1:,牛,niu.wav,,Answer 2:,狮子,shizi.wav,,Answer 3:,狗,gou.wav,,Answer 4:,大象,daxiang.wav,,,1
