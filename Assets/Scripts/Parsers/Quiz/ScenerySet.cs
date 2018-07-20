@@ -40,7 +40,7 @@ public class ScenerySet{
 
     public class InstructionsSet
     {
-        public string textline;
+        public string textline=null;
         public string audio_loc;
         public string image_loc;
         public InstructionsSet(List<string> set)
@@ -84,6 +84,7 @@ public class ScenerySet{
                         int.TryParse(answers, out converted);
                         this.correct_option.Add(converted); // attempt to parse into an integer and then push it into the list..
                     }
+                    Debug.Log(correct_option[0]);
                     int final_int = 1;
                     foreach (option current_focus in this.option_parts)
                     {

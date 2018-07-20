@@ -50,7 +50,7 @@ public class QuizController : MonoBehaviour
 	{
 		//UpdateQuestions();											// show the first question. IF YOU GET NULL REFERENCE OR OUT OF RANGE this might be because this is trying to display a question before the quizDataStorer has finished, either make this script execute after with code execution order in unity or idk maybe use a startbutton instead of calling from start
 		//SetMaxRounds();												// call to set max rounds
-		listOfScenerySets = pqUsual.Start();
+		//listOfScenerySets = pqUsual.Start();
 		Debug.Log(listOfScenerySets.Count);
 		quizDataStorer.StoreQuizData(listOfScenerySets);
 		
@@ -75,8 +75,8 @@ public class QuizController : MonoBehaviour
 		if(questionNum <= maxQuestions)
 		{
 			questionDisplay.text = quizDataStorer.qData.sectionData[roundNumber].questions[questionNum].questionText;									// set question text
-			//questionImage.sprite = Resources.Load<Sprite>(quizDataStorer.qData.sectionData[roundNumber].questions[questionNum].imagePath);				// set question image
-			
+			questionImage.sprite = Resources.Load<Sprite>(quizDataStorer.qData.sectionData[roundNumber].questions[questionNum].imagePath);				// set question image
+			Debug.Log(quizDataStorer.qData.sectionData[roundNumber].questions[questionNum].imagePath);
 			
 			for(int i = 0; i < answerObject.Length; i++)		// as many answer objects as there are, set text and stuff
 			{

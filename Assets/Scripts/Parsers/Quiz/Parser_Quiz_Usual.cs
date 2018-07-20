@@ -8,13 +8,8 @@ public class Parser_Quiz_Usual {
     //Uncomment the following line to change it to return a List<ScenerySet>. Also Uncomment the return statement and comment out the test function call at the bottom.
     //List<ScenerySet> Start(){
     
-    public TextAsset quizQuestions;
-    public List<ScenerySet> Start(string target=null)
+    public List<ScenerySet> LoadCSV(TextAsset quizQuestions)
     {
-        if (target != null)
-        {
-            quizQuestions = (TextAsset)Resources.Load(target);//("Default_Quiz");
-        }
         string[] items = quizQuestions.text.Split(new char[] { '\n' });
         List<ScenerySet> ListOfSets = new List<ScenerySet>();
 
@@ -93,8 +88,6 @@ public class Parser_Quiz_Usual {
 
         }
         ListOfSets.Add(LatestScenery);
-        test(ListOfSets[0]);
-        test(ListOfSets[1]);
         return ListOfSets;
 
     }
