@@ -9,11 +9,13 @@ public class UnifiedQuizController : MonoBehaviour {
 	public TextAsset[] csv = new TextAsset[3];
 	public QuizModel[] model = new QuizModel[3];
 	// Change GameOBject to your new question object class
-	public GameObject questionDisplayable;
+	public Image questionDisplayable;
+	public Text questionText;
 	// Change ExampleAnswerObject to your new answer object class
 	public AnswerObjectScript[] answerDisplayables;
 
 	private int currentLevel;
+	public GameController gController;
 
 	// Audio stuff
 	public AudioClip wrongAnswerSFX;
@@ -35,19 +37,28 @@ public class UnifiedQuizController : MonoBehaviour {
 	private void UpdateQuestionDisplayable(QuizModel.QuestionModel question)
 	{
 		// Example usage of question properties
-		questionDisplayable.GetComponentInChildren<Text> ().text = question.text;
-		questionDisplayable.GetComponentInChildren<Image>().sprite = question.image;
+		questionText.text = question.text;
+		questionDisplayable.sprite = question.image;
 		
 
 	}
 
 	private void UpdateAnswerDisplayables(QuizModel.QuestionModel question)
 	{
-		for (int i = 0; i < question.answers.Count; i++)
+		Debug.Log(question.answers.Count);
+		if(model[currentLevel].HasNextQuestion())
 		{
-			answerDisplayables[i].answer = question.answers[i];
-			answerDisplayables[i].UpdateSelf();
+			for (int i = 0; i < question.answers.Count - 1; i++)
+			{
+				answerDisplayables[i].answer = question.answers[i];
+				answerDisplayables[i].UpdateSelf();
+			}
 		}
+		else
+		{
+			gController.EndGame(currentLevel);
+		}
+		
 	}
 
 	public void ReceiveAnswer(bool isCorrect) 
@@ -71,6 +82,7 @@ public class UnifiedQuizController : MonoBehaviour {
 	public void SetLevel(int level)
 	{
 		currentLevel = level;
+		model[currentLevel].ResetCurrentLevel();
 		UpdateQuestionDisplayable(model[currentLevel].GetCurrentQuestion());
 		UpdateAnswerDisplayables(model[currentLevel].GetCurrentQuestion());
 	}
@@ -108,5 +120,4 @@ public class UnifiedQuizController : MonoBehaviour {
 	{
 		buttonCanvasGroup.interactable = !buttonCanvasGroup.interactable;
 	}
-
 }

@@ -37,6 +37,11 @@ public class QuizModel {
             sections.Add(s);
         }
     }
+    
+    public void ResetCurrentLevel()
+    {
+        currentQuestion = 0;
+    }
 
     public bool HasPreviousQuestion() {
         return currentQuestion > 0;
