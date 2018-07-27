@@ -30,8 +30,6 @@ public class UnifiedQuizController : MonoBehaviour {
 		model[0] = new QuizModel(csv[0]);
 		model[1] = new QuizModel(csv[1]);
 		model[2] = new QuizModel(csv[2]);
-		//UpdateQuestionDisplayable(model1.GetCurrentQuestion());
-		//UpdateAnswerDisplayables(model1.GetCurrentQuestion());
 	}
 
 	private void UpdateQuestionDisplayable(QuizModel.QuestionModel question)
@@ -39,37 +37,33 @@ public class UnifiedQuizController : MonoBehaviour {
 		// Example usage of question properties
 		questionText.text = question.text;
 		questionDisplayable.sprite = question.image;
-		
-
 	}
 
 	private void UpdateAnswerDisplayables(QuizModel.QuestionModel question)
 	{
-		Debug.Log(question.answers.Count);
-		if(model[currentLevel].HasNextQuestion())
+		for (int i = 0; i < question.answers.Count - 1; i++)
 		{
-			for (int i = 0; i < question.answers.Count - 1; i++)
-			{
-				answerDisplayables[i].answer = question.answers[i];
-				answerDisplayables[i].UpdateSelf();
-			}
+			answerDisplayables[i].answer = question.answers[i];
+			answerDisplayables[i].UpdateSelf();
 		}
-		else
-		{
-			gController.EndGame(currentLevel);
-		}
-		
 	}
 
 	public void ReceiveAnswer(bool isCorrect) 
 	{
 		if (isCorrect) 
 		{
-			print("Correct");
-			StopAllCoroutines();
-			StartCoroutine(RightAnswer());
-			UpdateAnswerDisplayables(model[currentLevel].GetNextQuestion());
-			UpdateQuestionDisplayable(model[currentLevel].GetCurrentQuestion());
+			if(model[currentLevel].HasNextQuestion())
+			{
+				print("Correct");
+				StopAllCoroutines();
+				StartCoroutine(RightAnswer());
+				UpdateAnswerDisplayables(model[currentLevel].GetNextQuestion());
+				UpdateQuestionDisplayable(model[currentLevel].GetCurrentQuestion());
+			}
+			else
+			{
+				gController.EndGame(currentLevel);
+			}
 		}
 		else 
 		{

@@ -33,9 +33,10 @@ public class GameController : MonoBehaviour
 		endScreen.SetActive(true);
 		avatar.sprite = avatars[level];
 		endImage.sprite = endSprites[level];
-		StartCoroutine(PlayVO(endVoiceOver[level], endVoiceOver2[level]));
-		endScreen.SetActive(false);
-		mainMenu.SetActive(true);
+		Debug.Log("starting VO coroutine");
+		StartCoroutine(PlayVO(endVoiceOver[level]));
+		StartCoroutine(PlayVO2(endVoiceOver2[level]));
+		Debug.Log("after playVO coroutine");
 	}
 
 	public void LoadQuizLevel(int level)
@@ -45,18 +46,31 @@ public class GameController : MonoBehaviour
 		levelPanel.SetActive(true);
 	}
 
-	IEnumerator PlayVO(AudioClip aclip, AudioClip aclip2)
+	IEnumerator PlayVO(AudioClip aclip)
 	{
 		aSource.clip = aclip;
-		while(aSource.isPlaying)
-		{
-			yield return null;
-		}
-
-		aSource.clip = aclip2;
+		aSource.Play();
+		Debug.Log("playing first clip in PlayVO");
 		while(aSource.isPlaying)
 		{
 			yield return null;
 		}
 	}	
+
+	IEnumerator PlayVO2(AudioClip aclip2)
+	{
+		aSource.clip = aclip2;
+		aSource.Play();
+		Debug.Log("playing second clip in PlayVO");
+		while(aSource.isPlaying)
+		{
+			yield return null;
+		}
+	}
+
+	public void ShowMainMenu()
+	{
+		endScreen.SetActive(false);
+		mainMenu.SetActive(true);
+	}
 }
