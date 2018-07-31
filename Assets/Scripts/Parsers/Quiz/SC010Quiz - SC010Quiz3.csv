@@ -1,0 +1,15 @@
+,Text:,Audio:,Image:,No of tries: (1-4),Points awarded: (0-infinity),Display question number: (Y/N),Timer: (0s-infinity),,,,,,,,,,
+Section Name:,Singapore Flyer - Quiz 2,Section Audio,SectionTitle.jpg,20000,0,TRUE,,,,,,,,,,,
+Instructions:,看汉语拼音，选请选择正确的汉字 ，并填空。出正确的答案！,Instructions.mp3,Instruction.jpg,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,
+,,Audio:,Image:,,,,,,,,,,,,,,
+Page Background:,,Page Background Audio,Page Background Image,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,
+,,,Image:,,,,,,,,,,,,,,
+Question Background:,,,QuestionBackground Image,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,
+,Text:,Audio:,Image:,,Text:,Audio:,Image:,,Text:,Audio:,Image:,,Text:,Audio:,Image:,,
+Question:,新加坡摩天观景轮非常受——迎。,,,Answer 1:,换,,,Answer 2:,欢,,,Answer 3:,还,,,Correct:,2
+Question:,摩天伦的包间里能看到——丽的风景。,,,Answer 1:,美,,,Answer 2:,没,,,Answer 3:,妹,,,Correct:,1
+Question:,我们可以乘搭——铁，到最靠近的一站，宝门廊。,,,Answer 1:,敌,,,Answer 2:,底,,,Answer 3:,地,,,Correct:,3
+Question:,新加坡摩天轮有很多外——游客来观赏,,,Answer 1:,国,,,Answer 2:,过,,,Answer 3:,锅,,,Correct:,1

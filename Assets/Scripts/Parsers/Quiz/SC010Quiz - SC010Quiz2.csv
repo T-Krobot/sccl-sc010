@@ -1,0 +1,15 @@
+,Text:,Audio:,Image:,No of tries: (1-4),Points awarded: (0-infinity),Display question number: (Y/N),Timer: (0s-infinity),,,,,,,,,,
+Section Name:,Zoo - Quiz 3,Section Audio,SectionTitle.jpg,20000,0,TRUE,,,,,,,,,,,
+Instructions:,请选择正确的词语,Instructions.mp3,Instruction.jpg,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,
+,,Audio:,Image:,,,,,,,,,,,,,,
+Page Background:,,Page Background Audio,Page Background Image,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,
+,,,Image:,,,,,,,,,,,,,,
+Question Background:,,,QuestionBackground Image,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,
+,Text:,Audio:,Image:,,Text:,Audio:,Image:,,Text:,Audio:,Image:,,Text:,Audio:,Image:,,
+Question:,dé shì,,,Answer 1:,德士,,,Answer 2:,得失,,,Answer 3:,得时,,,Correct:,1
+Question:,dà xiàng,,,Answer 1:,大想,,,Answer 2:,大祥,,,Answer 3:,大象,,,Correct:,3
+Question:,mǎ lù,,,Answer 1:,吗路,,,Answer 2:,马路,,,Answer 3:,骂路,,,Correct:,2
+Question:,fēng jǐng,,,Answer 1:,风经,,,Answer 2:,风镜,,,Answer 3:,风景,,,Correct:,3
