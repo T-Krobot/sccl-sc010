@@ -10,14 +10,17 @@ using UnityEngine.UI;
  */
 
 
-public class AnswerObjectScript : MonoBehaviour {
-
+public class AnswerObjectScript : MonoBehaviour 
+{
+    public CanvasGroup cg;
+    public AudioSource source;
     public UnifiedQuizController quizController;
     public QuizModel.AnswerModel answer {get; set;}
 
-    public void SubmitAnswer() {
-
-        quizController.ReceiveAnswer(answer.isCorrect);
+    public void StartSubmission() 
+    {
+        StartCoroutine(PlaySound());
+        Debug.Log(answer.audio);
     }
 
     public void UpdateSelf() {
@@ -25,5 +28,22 @@ public class AnswerObjectScript : MonoBehaviour {
         GetComponentInChildren<Text>().text = answer.text;
     }
 
+    private void SendToController()
+    {
+        cg.interactable = true;
+        quizController.ReceiveAnswer(answer.isCorrect);
+    }
 
+
+    IEnumerator PlaySound()
+    {
+        cg.interactable = false;
+        source.clip = answer.audio;
+        source.Play();
+        while(source.isPlaying)
+        {
+            yield return null;
+        }
+        SendToController();
+    }
 }

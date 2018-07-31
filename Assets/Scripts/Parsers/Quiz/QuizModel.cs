@@ -24,13 +24,14 @@ public class QuizModel {
                     AnswerModel answer = new AnswerModel(a.iscorrect,
                                                 a.text,
                                                 Resources.Load<Sprite>(a.image),
-                                                Resources.Load<AudioClip>(a.audio));
+                                                Resources.Load<AudioClip>("AnswerAudio/" + a.audio));
                     answers.Add(answer);
                 }
                 QuestionModel question = new QuestionModel(q.question_text,
                                                     Resources.Load<Sprite>(q.question_image),
                                                     Resources.Load<AudioClip>(q.question_audio),
                                                     answers);
+                                                    
                 finalQuestions.Add(question);
             }
             SectionModel s = new SectionModel(finalQuestions);

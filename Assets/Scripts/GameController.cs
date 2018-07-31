@@ -5,7 +5,7 @@ using UnityEngine.UI;
 
 public class GameController : MonoBehaviour 
 {
-
+	public AudioClip[] quizIntros;
 	private UnifiedQuizController qControl;
 	public GameObject mainMenu;
 	public GameObject levelPanel;
@@ -44,6 +44,8 @@ public class GameController : MonoBehaviour
 		qControl.SetLevel(level);
 		mainMenu.SetActive(false);
 		levelPanel.SetActive(true);
+		aSource.clip = quizIntros[level];
+		aSource.Play();
 	}
 
 	IEnumerator PlayVO(AudioClip aclip)
