@@ -19,6 +19,7 @@ public class AnswerObjectScript : MonoBehaviour
 
     public void StartSubmission() 
     {
+        StopAllCoroutines();
         StartCoroutine(PlaySound());
         Debug.Log(answer.audio);
     }

@@ -33,10 +33,8 @@ public class GameController : MonoBehaviour
 		endScreen.SetActive(true);
 		avatar.sprite = avatars[level];
 		endImage.sprite = endSprites[level];
-		Debug.Log("starting VO coroutine");
 		StartCoroutine(PlayVO(endVoiceOver[level]));
 		StartCoroutine(PlayVO2(endVoiceOver2[level]));
-		Debug.Log("after playVO coroutine");
 	}
 
 	public void LoadQuizLevel(int level)
@@ -52,7 +50,6 @@ public class GameController : MonoBehaviour
 	{
 		aSource.clip = aclip;
 		aSource.Play();
-		Debug.Log("playing first clip in PlayVO");
 		while(aSource.isPlaying)
 		{
 			yield return null;
@@ -63,7 +60,6 @@ public class GameController : MonoBehaviour
 	{
 		aSource.clip = aclip2;
 		aSource.Play();
-		Debug.Log("playing second clip in PlayVO");
 		while(aSource.isPlaying)
 		{
 			yield return null;

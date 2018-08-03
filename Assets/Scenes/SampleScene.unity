@@ -336,8 +336,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 1}
   m_AnchorMax: {x: 0, y: 1}
-  m_AnchoredPosition: {x: 71.81009, y: -18.991098}
-  m_SizeDelta: {x: 143.62018, y: 37.982197}
+  m_AnchoredPosition: {x: 70.4, y: -19.2}
+  m_SizeDelta: {x: 140.8, y: 38.4}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &154313832
 MonoBehaviour:
@@ -593,8 +593,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 1}
   m_AnchorMax: {x: 0, y: 1}
-  m_AnchoredPosition: {x: 142.34999, y: -76.9733}
-  m_SizeDelta: {x: 143.62018, y: 37.982197}
+  m_AnchoredPosition: {x: 142.34999, y: -77.600006}
+  m_SizeDelta: {x: 140.8, y: 38.4}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &188104940
 MonoBehaviour:
@@ -850,8 +850,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 1}
   m_AnchorMax: {x: 0, y: 1}
-  m_AnchoredPosition: {x: 142.34999, y: -18.991098}
-  m_SizeDelta: {x: 143.62018, y: 37.982197}
+  m_AnchoredPosition: {x: 142.34999, y: -19.2}
+  m_SizeDelta: {x: 140.8, y: 38.4}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &290490905
 MonoBehaviour:
@@ -1526,8 +1526,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 1}
   m_AnchorMax: {x: 0, y: 1}
-  m_AnchoredPosition: {x: 71.81009, y: -18.991098}
-  m_SizeDelta: {x: 143.62018, y: 37.982197}
+  m_AnchoredPosition: {x: 70.4, y: -19.2}
+  m_SizeDelta: {x: 140.8, y: 38.4}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &643090510
 MonoBehaviour:
@@ -1764,6 +1764,10 @@ Prefab:
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
       value: 
       objectReference: {fileID: 0}
+    - target: {fileID: 1111682184907136, guid: 7a039508d6d454fe0bd68a445a501aaa, type: 2}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 7a039508d6d454fe0bd68a445a501aaa, type: 2}
   m_IsPrefabParent: 0
@@ -1803,8 +1807,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 1}
   m_AnchorMax: {x: 0, y: 1}
-  m_AnchoredPosition: {x: 142.34999, y: -134.95549}
-  m_SizeDelta: {x: 143.62018, y: 37.982197}
+  m_AnchoredPosition: {x: 142.34999, y: -136}
+  m_SizeDelta: {x: 140.8, y: 38.4}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &785827204
 MonoBehaviour:
@@ -1959,6 +1963,7 @@ RectTransform:
   - {fileID: 429321241}
   - {fileID: 694988671}
   - {fileID: 2094519649}
+  - {fileID: 1087533543}
   m_Father: {fileID: 959220699}
   m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -2206,7 +2211,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 1
     m_LineSpacing: 1
-  m_Text: asdnfgauhdywafsygduiahfyauhdbfyagdbaygfavga faufafa
+  m_Text: placeholderplaceholderplaceholder
 --- !u!222 &903783084
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -2568,7 +2573,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: New Text
+  m_Text: Singapore Zoo
 --- !u!222 &984775952
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -2643,6 +2648,80 @@ CanvasRenderer:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1084911929}
+--- !u!1 &1087533542
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 5
+  m_Component:
+  - component: {fileID: 1087533543}
+  - component: {fileID: 1087533545}
+  - component: {fileID: 1087533544}
+  m_Layer: 5
+  m_Name: Text
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &1087533543
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1087533542}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 813687408}
+  m_RootOrder: 7
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0, y: 0}
+  m_AnchorMax: {x: 1, y: 0}
+  m_AnchoredPosition: {x: 0, y: 84}
+  m_SizeDelta: {x: -273.8, y: 133.79999}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &1087533544
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1087533542}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 708705254, guid: f70555f144d8491a825f0804e09c671c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Material: {fileID: 0}
+  m_Color: {r: 0.19607843, g: 0.19607843, b: 0.19607843, a: 1}
+  m_RaycastTarget: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+    m_TypeName: UnityEngine.UI.MaskableGraphic+CullStateChangedEvent, UnityEngine.UI,
+      Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+  m_FontData:
+    m_Font: {fileID: 10102, guid: 0000000000000000e000000000000000, type: 0}
+    m_FontSize: 35
+    m_FontStyle: 0
+    m_BestFit: 0
+    m_MinSize: 10
+    m_MaxSize: 40
+    m_Alignment: 4
+    m_AlignByGeometry: 0
+    m_RichText: 1
+    m_HorizontalOverflow: 0
+    m_VerticalOverflow: 0
+    m_LineSpacing: 1
+  m_Text: MISSING AUDIO IN THIS BUILD
+--- !u!222 &1087533545
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1087533542}
 --- !u!1 &1166437631
 GameObject:
   m_ObjectHideFlags: 0
@@ -2781,10 +2860,10 @@ MonoBehaviour:
     m_Alignment: 4
     m_AlignByGeometry: 0
     m_RichText: 1
-    m_HorizontalOverflow: 0
+    m_HorizontalOverflow: 1
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: New Text
+  m_Text: Marina bay sands
 --- !u!222 &1231137072
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -2858,7 +2937,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: aydgabwduiaysdiw
+  m_Text: placeholderplaceholder
 --- !u!222 &1288537042
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -2897,8 +2976,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 1}
   m_AnchorMax: {x: 0, y: 1}
-  m_AnchoredPosition: {x: 71.81009, y: -18.991098}
-  m_SizeDelta: {x: 143.62018, y: 37.982197}
+  m_AnchoredPosition: {x: 70.4, y: -19.2}
+  m_SizeDelta: {x: 140.8, y: 38.4}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1465564059
 MonoBehaviour:
@@ -3006,7 +3085,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: New Text
+  m_Text: Singapore flyer
 --- !u!222 &1490359193
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -3030,9 +3109,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   csv:
-  - {fileID: 4900000, guid: e0a4c9afbfe8a457ab5f2096349a112f, type: 3}
-  - {fileID: 4900000, guid: 2a2be7bc4da2d4cb1b35d334500852fb, type: 3}
-  - {fileID: 4900000, guid: 23428aa6a24174d16a8451cbc42bd657, type: 3}
+  - {fileID: 4900000, guid: 08142c57a29104d32bae20cbc713bef5, type: 3}
+  - {fileID: 4900000, guid: 4ca896066ab364815883c63ccbfc6989, type: 3}
+  - {fileID: 4900000, guid: 565134034659c4b74bebc350ac83d1e4, type: 3}
   model:
   - csv: {fileID: 0}
   - csv: {fileID: 0}
@@ -3044,9 +3123,9 @@ MonoBehaviour:
   - {fileID: 188104943}
   - {fileID: 785827207}
   gController: {fileID: 1533577141}
-  wrongAnswerSFX: {fileID: 8300000, guid: 8065e43c32e0f4d648bc35d653215d64, type: 3}
-  wrongAnswerVO: {fileID: 8300000, guid: 790ece6856e3e4d7c8e2a57130c2db5d, type: 3}
-  rightAnswer: {fileID: 8300000, guid: a047af14fdc804a4ebc97941c0454c0a, type: 3}
+  wrongAnswerSFX: {fileID: 8300000, guid: 10c124fcd75be41fcb20fb41f43ec5ac, type: 3}
+  wrongAnswerVO: {fileID: 8300000, guid: 10c124fcd75be41fcb20fb41f43ec5ac, type: 3}
+  rightAnswer: {fileID: 8300000, guid: 3c2007b726cf74f5f93ae9979acf0677, type: 3}
   audioSource: {fileID: 1533577140}
   buttonCanvasGroup: {fileID: 488509510}
 --- !u!82 &1533577140
@@ -3163,17 +3242,17 @@ MonoBehaviour:
   levelPanel: {fileID: 179332011}
   aSource: {fileID: 1533577140}
   endSprites:
-  - {fileID: 21300000, guid: 26307aafc5f5845fe985fd45983b4a06, type: 3}
-  - {fileID: 21300000, guid: c9a19c757f65441c1b174294089ea4fc, type: 3}
-  - {fileID: 21300000, guid: d3cb0a04e11f2486090d2ff5d8df04f3, type: 3}
+  - {fileID: 21300000, guid: 9feb69039bdff492eb26e43ec0b65911, type: 3}
+  - {fileID: 21300000, guid: b0c939ba21fa247bbaceed260c770a8e, type: 3}
+  - {fileID: 21300000, guid: 9166939816ce04c9dac214042b95d9c3, type: 3}
   endVoiceOver:
   - {fileID: 8300000, guid: 790ece6856e3e4d7c8e2a57130c2db5d, type: 3}
   - {fileID: 8300000, guid: b9912370e91c94a3d9e7e4b89212c361, type: 3}
   - {fileID: 8300000, guid: 5a7064878456d49218a00ecefd8109a0, type: 3}
   endVoiceOver2:
-  - {fileID: 8300000, guid: a047af14fdc804a4ebc97941c0454c0a, type: 3}
-  - {fileID: 8300000, guid: a047af14fdc804a4ebc97941c0454c0a, type: 3}
-  - {fileID: 8300000, guid: a047af14fdc804a4ebc97941c0454c0a, type: 3}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
   avatars:
   - {fileID: 21300000, guid: aa189bda86f3d43639453a1c9840e4ae, type: 3}
   - {fileID: 21300000, guid: 4924fd115a42440aba214f0ea88005b8, type: 3}
@@ -3349,10 +3428,10 @@ MonoBehaviour:
     m_Alignment: 4
     m_AlignByGeometry: 0
     m_RichText: 1
-    m_HorizontalOverflow: 0
+    m_HorizontalOverflow: 1
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: Pink text right here asdfasdafad
+  m_Text: Placeholderplaceholderplaceholder
 --- !u!222 &1695770751
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -3458,10 +3537,10 @@ RectTransform:
   m_Father: {fileID: 127173960}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0, y: 0}
+  m_AnchorMin: {x: 0, y: 1}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: 0, y: 0}
-  m_SizeDelta: {x: 0, y: 0}
+  m_AnchoredPosition: {x: 0, y: -52.5}
+  m_SizeDelta: {x: 0, y: 105}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1783258283
 MonoBehaviour:
@@ -3495,7 +3574,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: uguyaugaihdyagfuahdyafgyafgyfahfyghfuabvcnbzjnaldqpowhudhfad
+  m_Text: Placeholderplaceholderplaceholder
 --- !u!222 &1783258284
 CanvasRenderer:
   m_ObjectHideFlags: 0

@@ -24,7 +24,7 @@ public class QuizModel {
                     AnswerModel answer = new AnswerModel(a.iscorrect,
                                                 a.text,
                                                 Resources.Load<Sprite>(a.image),
-                                                Resources.Load<AudioClip>("AnswerAudio/" + a.audio));
+                                                Resources.Load<AudioClip>(a.audio));
                     answers.Add(answer);
                 }
                 QuestionModel question = new QuestionModel(q.question_text,

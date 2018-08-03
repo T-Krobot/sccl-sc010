@@ -94,14 +94,6 @@ public class UnifiedQuizController : MonoBehaviour
 		{
 			yield return null;
 		}
-
-		audioSource.clip = wrongAnswerVO;
-		audioSource.Play();
-
-		while(audioSource.isPlaying)
-		{
-			yield return null;
-		}
 	}
 
 	IEnumerator RightAnswer()
