@@ -5,7 +5,7 @@ using UnityEngine.UI;
 
 public class GameController : MonoBehaviour 
 {
-	public AudioClip[] quizIntros;
+	public AudioClip quizIntros;
 	private UnifiedQuizController qControl;
 	public GameObject mainMenu;
 	public GameObject levelPanel;
@@ -31,10 +31,8 @@ public class GameController : MonoBehaviour
 	{
 		levelPanel.SetActive(false);
 		endScreen.SetActive(true);
-		avatar.sprite = avatars[level];
 		endImage.sprite = endSprites[level];
-		StartCoroutine(PlayVO(endVoiceOver[level]));
-		StartCoroutine(PlayVO2(endVoiceOver2[level]));
+		StartCoroutine(PlayVO(endVoiceOver[level], level));
 	}
 
 	public void LoadQuizLevel(int level)
@@ -42,11 +40,11 @@ public class GameController : MonoBehaviour
 		qControl.SetLevel(level);
 		mainMenu.SetActive(false);
 		levelPanel.SetActive(true);
-		aSource.clip = quizIntros[level];
+		aSource.clip = quizIntros;
 		aSource.Play();
 	}
 
-	IEnumerator PlayVO(AudioClip aclip)
+	IEnumerator PlayVO(AudioClip aclip, int level)
 	{
 		aSource.clip = aclip;
 		aSource.Play();
@@ -54,10 +52,12 @@ public class GameController : MonoBehaviour
 		{
 			yield return null;
 		}
+		StartCoroutine(PlayVO2(endVoiceOver2[level]));
 	}	
 
 	IEnumerator PlayVO2(AudioClip aclip2)
 	{
+		yield return new WaitForSeconds(1f);
 		aSource.clip = aclip2;
 		aSource.Play();
 		while(aSource.isPlaying)

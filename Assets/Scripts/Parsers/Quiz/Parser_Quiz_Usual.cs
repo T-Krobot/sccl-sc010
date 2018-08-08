@@ -88,7 +88,6 @@ public class Parser_Quiz_Usual {
 
         }
         ListOfSets.Add(LatestScenery);
-        test(ListOfSets[0]);
         return ListOfSets;
 
     }

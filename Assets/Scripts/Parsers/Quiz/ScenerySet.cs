@@ -84,7 +84,7 @@ public class ScenerySet{
                         int.TryParse(answers, out converted);
                         this.correct_option.Add(converted); // attempt to parse into an integer and then push it into the list..
                     }
-                    Debug.Log(correct_option[0]);
+                    //Debug.Log(correct_option[0]);
                     int final_int = 1;
                     foreach (option current_focus in this.option_parts)
                     {
