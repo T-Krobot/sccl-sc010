@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.44657838, g: 0.49641234, b: 0.57481676, a: 1}
+  m_IndirectSpecularColor: {r: 0.44657898, g: 0.4964133, b: 0.5748178, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -2865,9 +2865,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   csv:
-  - {fileID: 4900000, guid: 6ee9003dbc89f493a9b1d451a283c837, type: 3}
   - {fileID: 4900000, guid: 7b45ccdc4b01f489291eb833a2a0eb47, type: 3}
-  - {fileID: 4900000, guid: 38805ca44a32f4df4a5fd98354b87426, type: 3}
+  - {fileID: 4900000, guid: 7b45ccdc4b01f489291eb833a2a0eb47, type: 3}
+  - {fileID: 4900000, guid: 6ee9003dbc89f493a9b1d451a283c837, type: 3}
   model:
   - csv: {fileID: 0}
   - csv: {fileID: 0}
@@ -3429,8 +3429,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0.37315628}
   m_AnchorMax: {x: 1, y: 0.43125004}
-  m_AnchoredPosition: {x: 0, y: -2.4500122}
-  m_SizeDelta: {x: -596.2, y: -0.19999695}
+  m_AnchoredPosition: {x: 20.7, y: -2.4500122}
+  m_SizeDelta: {x: -322.8, y: -0.2}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1960455883
 MonoBehaviour:
