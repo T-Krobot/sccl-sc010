@@ -21,6 +21,8 @@ public class GameController : MonoBehaviour
 	public GameObject endScreen;
 	public Image endImage, avatar;
 
+	public GameObject[] gamePanels; // these are the panels used for the quiz and any ending screens. used to disable all panels when quitting to menu to avoid double ups
+
 
 	void Start () 
 	{
@@ -69,6 +71,15 @@ public class GameController : MonoBehaviour
 	public void ShowMainMenu()
 	{
 		endScreen.SetActive(false);
+		mainMenu.SetActive(true);
+	}
+
+	public void QuitToMenu()
+	{
+		foreach(GameObject panel in gamePanels)
+		{
+			panel.SetActive(false);
+		}
 		mainMenu.SetActive(true);
 	}
 }
