@@ -35,6 +35,7 @@ public class GameController : MonoBehaviour
 		endScreen.SetActive(true);
 		endImage.sprite = endSprites[level];
 		StartCoroutine(PlayVO(endVoiceOver[level], level));
+		avatar.sprite = avatars[level];
 	}
 
 	public void LoadQuizLevel(int level)
