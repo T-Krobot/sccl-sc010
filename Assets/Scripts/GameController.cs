@@ -1,4 +1,4 @@
-﻿using System.Collections;
+using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
@@ -16,6 +16,7 @@ public class GameController : MonoBehaviour
 	public AudioClip[] endVoiceOver;
 	public AudioClip[] endVoiceOver2;
 	public Sprite[] avatars;
+	private int level;
 
 	// end screen elements
 	public GameObject endScreen;
@@ -31,6 +32,7 @@ public class GameController : MonoBehaviour
 
 	public void EndGame(int level)
 	{
+		this.level = level;
 		levelPanel.SetActive(false);
 		endScreen.SetActive(true);
 		endImage.sprite = endSprites[level];
@@ -55,18 +57,12 @@ public class GameController : MonoBehaviour
 		{
 			yield return null;
 		}
-		StartCoroutine(PlayVO2(endVoiceOver2[level]));
 	}	
 
-	IEnumerator PlayVO2(AudioClip aclip2)
+	public void PlayVO2()
 	{
-		yield return new WaitForSeconds(1f);
-		aSource.clip = aclip2;
+		aSource.clip = endVoiceOver2[level];
 		aSource.Play();
-		while(aSource.isPlaying)
-		{
-			yield return null;
-		}
 	}
 
 	public void ShowMainMenu()
