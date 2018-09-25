@@ -109,5 +109,6 @@ public class UnifiedQuizController : MonoBehaviour
 	private void DisableAnswerButtons()
 	{
 		buttonCanvasGroup.interactable = !buttonCanvasGroup.interactable;
+		Debug.Log("disable interactable");
 	}
 }

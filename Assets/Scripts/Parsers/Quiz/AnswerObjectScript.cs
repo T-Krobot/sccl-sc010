@@ -16,7 +16,12 @@ public class AnswerObjectScript : MonoBehaviour
     public AudioSource source;
     public UnifiedQuizController quizController;
     public QuizModel.AnswerModel answer {get; set;}
+    private Image img;
 
+    private void Awake()
+    {
+        img = GetComponent<Image>();
+    }
     public void StartSubmission() 
     {
         StopAllCoroutines();
@@ -31,14 +36,16 @@ public class AnswerObjectScript : MonoBehaviour
 
     private void SendToController()
     {
-        cg.interactable = true;
+        cg.blocksRaycasts = true;
+        img.color = Color.white;
         quizController.ReceiveAnswer(answer.isCorrect);
     }
 
 
     IEnumerator PlaySound()
     {
-        cg.interactable = false;
+        cg.blocksRaycasts = false;
+        img.color = Color.gray;
         source.clip = answer.audio;
         source.Play();
         while(source.isPlaying)
