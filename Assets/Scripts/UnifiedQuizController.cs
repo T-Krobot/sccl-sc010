@@ -3,17 +3,15 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 
-
+// this quiz controller is used for all 3 levels.
 public class UnifiedQuizController : MonoBehaviour
 {
 
     public TextAsset[] csv = new TextAsset[3];
     public QuizModel[] model = new QuizModel[3];
    
-	// Change GameOBject to your new question object class
 	public Image questionDisplayable;
 	public Text questionText;
-	// Change ExampleAnswerObject to your new answer object class
 	public AnswerObjectScript[] answerDisplayables;
 
 	private int currentLevel;
@@ -29,14 +27,14 @@ public class UnifiedQuizController : MonoBehaviour
 	
 	public void Start()
 	{
-        model[0] = new QuizModel(csv[0]);
-        model[1] = new QuizModel(csv[1]);
-        model[2] = new QuizModel(csv[2]);
+		for(int i = 0; i < model.Length; i++)
+		{
+			model[i] = new QuizModel(csv[i]);
+		}
 	}
 
 	private void UpdateQuestionDisplayable(QuizModel.QuestionModel question)
 	{
-		// Example usage of question properties
 		questionText.text = question.text;
         questionDisplayable.sprite = question.image;
 	}
