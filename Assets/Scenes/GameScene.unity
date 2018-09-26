@@ -1943,7 +1943,7 @@ GameObject:
   m_Component:
   - component: {fileID: 813687408}
   m_Layer: 5
-  m_Name: Chest screen
+  m_Name: End screen
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -3121,7 +3121,6 @@ MonoBehaviour:
   wrongAnswerVO: {fileID: 8300000, guid: 10c124fcd75be41fcb20fb41f43ec5ac, type: 3}
   rightAnswer: {fileID: 8300000, guid: 3c2007b726cf74f5f93ae9979acf0677, type: 3}
   audioSource: {fileID: 1533577140}
-  buttonCanvasGroup: {fileID: 488509510}
 --- !u!82 &1533577140
 AudioSource:
   m_ObjectHideFlags: 0
@@ -4270,7 +4269,7 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls:
       - m_Target: {fileID: 1533577141}
-        m_MethodName: ShowMainMenu
+        m_MethodName: QuitToMenu
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}

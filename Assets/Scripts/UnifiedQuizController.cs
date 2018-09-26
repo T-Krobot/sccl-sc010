@@ -7,26 +7,26 @@ using UnityEngine.UI;
 public class UnifiedQuizController : MonoBehaviour
 {
 
-    public TextAsset[] csv = new TextAsset[3];
-    public QuizModel[] model = new QuizModel[3];
+    public TextAsset[] csv = new TextAsset[3];					// the csv files for each quiz
+    public QuizModel[] model = new QuizModel[3];				// quiz model for each
    
-	public Image questionDisplayable;
-	public Text questionText;
-	public AnswerObjectScript[] answerDisplayables;
+	public Image questionDisplayable;							// UI image for question images
+	public Text questionText;									// text for question text
+	public AnswerObjectScript[] answerDisplayables;				// list of answer objects (buttons in this case), 3 of them
 
-	private int currentLevel;
-	public GameController gController;
+	private int currentLevel;									// current level, 0-2
+	public GameController gController;							// game controller, handles all the non quiz stuff. main menu, end screen etc.
 
 	// Audio stuff
-	public AudioClip wrongAnswerSFX;
-	public AudioClip wrongAnswerVO;
-	public AudioClip rightAnswer;
+	public AudioClip wrongAnswerSFX;							// played when answered wrongly
+	public AudioClip wrongAnswerVO;								// played after wrongAnswerSFX
+	public AudioClip rightAnswer;								// played when answered correctly
 	public AudioSource audioSource;
 
-	public CanvasGroup buttonCanvasGroup;
 	
 	public void Start()
 	{
+		// parse CSVs
 		for(int i = 0; i < model.Length; i++)
 		{
 			model[i] = new QuizModel(csv[i]);
@@ -48,6 +48,7 @@ public class UnifiedQuizController : MonoBehaviour
 		}
 	}
 
+	// called from AnswerObjectScript.cs
 	public void ReceiveAnswer(bool isCorrect) 
 	{
 		if (isCorrect) 
@@ -75,6 +76,7 @@ public class UnifiedQuizController : MonoBehaviour
 		}
 	}
 
+	// called from GameController.cs
 	public void SetLevel(int level)
 	{
 		currentLevel = level;
@@ -102,11 +104,5 @@ public class UnifiedQuizController : MonoBehaviour
 		{
 			yield return null;
 		}
-	}
-
-	private void DisableAnswerButtons()
-	{
-		buttonCanvasGroup.interactable = !buttonCanvasGroup.interactable;
-		Debug.Log("disable interactable");
 	}
 }

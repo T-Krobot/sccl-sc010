@@ -70,19 +70,14 @@ public class GameController : MonoBehaviour
 		}
 	}	
 
+	// called from avatar image button in end screen
 	public void PlayVO2()
 	{
 		aSource.clip = endVoiceOver2[level];
 		aSource.Play();
 	}
 
-	public void ShowMainMenu()
-	{
-		endScreen.SetActive(false);
-		mainMenu.SetActive(true);
-		aSource.Stop();
-	}
-
+	// called from X button in game and exit in the End screen
 	public void QuitToMenu()
 	{
 		foreach(GameObject panel in gamePanels)
