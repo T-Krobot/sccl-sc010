@@ -32,10 +32,10 @@ public class GameController : MonoBehaviour
 		qControl = FindObjectOfType<UnifiedQuizController>();
 	}
 
-	private void Update()
-	{
-		Debug.Log(level);
-	}
+	// private void Update()
+	// {
+	// 	Debug.Log(level);
+	// }
 
 
 	// called from unified quiz controller, passes in level that ended
